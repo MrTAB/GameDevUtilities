@@ -46,16 +46,16 @@ inline
 color_t add(const color_t a, const color_t b)
 {
     return color_t(std::min(255, a.red   +  b.red),
-                   std::min(255, a.green +  b.green)),
-                   std::min(255, a.blue  +  b.blue)));
+                   std::min(255, a.green +  b.green),
+                   std::min(255, a.blue  +  b.blue));
 }
 
 inline
 color_t subtract(const color_t a, const color_t b)
 {
     return color_t(std::max(0, a.red   -  b.red),
-                   std::max(0, a.green -  b.green)),
-                   std::max(0, a.blue  -  b.blue)));
+                   std::max(0, a.green -  b.green),
+                   std::max(0, a.blue  -  b.blue));
 }
 
 inline

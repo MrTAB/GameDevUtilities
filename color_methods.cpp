@@ -195,7 +195,7 @@ color_t get_greyscale(const color_t c)
 {
     // CCIR601 luma
     const float luma = 0.299f*c.red + 0.587f*c.green + 0.114f*c.blue;
-    return color_t(luma, luma, luma, alpha(c));
+    return color_t(luma, luma, luma, c.alpha);
 }
 
 
